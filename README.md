@@ -6,7 +6,7 @@
 
  I hope you like this mini-app.
 
- I really faced the hard of picture field-adjustment stuff, I am little bit obsessive about page layout.
+ I often faced the hard of picture field-adjustment stuff, I am little bit obsessive about page layout.
 
  I tried to adjust the same height my three block, finally i did it :)
 

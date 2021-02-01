@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="pic" ><img  id="picpic" src="pic-1.png"; height="450px"; width="500px"; align="right"></div>
+    <div id="pic2" ><img  id="picpic2" src="picpic2.png"; height="450px"; width="500px"; align="left"></div>
+
+
+
+    <div id= content height="900px"; width="500px"; style="overflow: hidden; background-color: rgb(3, 2, 10);">
+
+        <div id = "dice-empty-area" ><img id="dice-one" src="empty-dice.png"; height="223px"; width="200px";align="middle";></div>
+
+     
+
+
+    <div id= content height="900px"; width="200px"; style="overflow: hidden; background-color: rgb(1, 0, 7);">   
+
+        <div id = "dice-one-area" style="float: right;"><img id="dice-two" src="empty-dice.png" height="223px"; width="185s0px"; align="middle";></div>
+
+
+
+
+
+    // this style block totally gives a CSS feature of button
+        <div id="button-area"><button id="roll-dice" 
+        
+        style=" 
+        border-radius: 8px;
+
+        background-color: rgb(179, 129, 194);
+
+        color: #780783;
+
+        border: 2px solid #112494;"
+
+        onclick="newdice()">Roll a Dice! 
+    
+    </button></div>
+
+    <div id= "pic1" src="pic-1.png"></div>
+
+<script type="text/javascript" language="javascript">
+
+function newdice() {
+
+    var randomnumbfirst          = Math.ceil(Math.random() * 6);
+    var randomnumbsecond         = Math.ceil(Math.random() * 6);
+
+    // this if block means that it is generated our first random number 
+    if (randomnumbfirst === 1) {
+
+        document.getElementById("dice-one").src = "dice-1.png";
+
+    }else if (randomnumbfirst === 2) {
+
+        document.getElementById("dice-one").src = "dice-2.png";
+
+    }else if (randomnumbfirst === 3) {
+
+        document.getElementById("dice-one").src = "dice-3.png";
+
+    }else if (randomnumbfirst === 4) {
+
+        document.getElementById("dice-one").src = "dice-4.png";
+        
+    }else if (randomnumbfirst === 5) {
+
+        document.getElementById("dice-one").src = "dice-5.png";
+
+    }else if (randomnumbfirst === 6) {
+
+        document.getElementById("dice-one").src = "dice-6.png";
+    }
+
+
+
+
+    // also this if block means that it is generated our secind random number 
+    if (randomnumbsecond === 1) {
+
+        document.getElementById("dice-two").src = "dice-1.png";
+
+    }else if (randomnumbsecond === 2) {
+
+        document.getElementById("dice-two").src = "dice-2.png";
+
+    }else if (randomnumbsecond === 3) {
+
+        document.getElementById("dice-two").src = "dice-3.png";
+
+    }else if (randomnumbsecond === 4) {
+
+        document.getElementById("dice-two").src = "dice-4.png";
+        
+    }else if (randomnumbsecond === 5) {
+
+        document.getElementById("dice-two").src = "dice-5.png";
+
+    }else if (randomnumbsecond === 6) {
+
+        document.getElementById("dice-two").src = "dice-6.png";
+    }
+}
+
+</script>    
+</body>
+</html>  
